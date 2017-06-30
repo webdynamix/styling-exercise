@@ -1,5 +1,8 @@
 # styling-exercise
 I have included the bundle. No need for setup.
+* I used SASS in stylesheets/
+* I used a node modules to use/compile the grid from neat-bourbon library.
+* I used the Webpack module bundler.
 
 ## Setup
 1. [Install NodeJS](https://nodejs.org/en/)
