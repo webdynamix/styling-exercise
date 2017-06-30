@@ -1,0 +1,18 @@
+@import "colors";
+@import "queries";
+
+$mainFont: Lato, Helvetica, sans-serif;
+$headingFont: Dosis, Arial, sans-serif;
+$sectionHeadingFont: Georgia, Times, "Times New Roman", serif;
+
+$fontsize: 18px;
+$bigFont: 26px;
+$regular: 300;
+$medium: 400;
+$bold: 700;
+
+$maxScreenWidth: 640px;
+$gutter: 20px;
+
+$regularButton: 1.08rem 1.5rem;
+$mediumButton: 1.4rem 1.5rem;

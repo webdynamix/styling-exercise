@@ -1,0 +1,10 @@
+/*
+  I only added the screen width from the mockup
+  since this example will have a fixed width, otherwise I would have
+  multiple defenitions for responsive design
+*/
+@mixin desktop {
+  @media only screen and (min-width: 481px) {
+    @content;
+  }
+}

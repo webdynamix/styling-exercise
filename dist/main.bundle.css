@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:500|Lato:300,400,700);/*
+  I only added the screen width from the mockup
+  since this example will have a fixed width, otherwise I would have
+  multiple defenitions for responsive design
+*/
+header {
+  font-size: 1rem;
+  background: #ffffff; }
+  header > .promo {
+    color: #34404c;
+    font-weight: 400;
+    background: #ebe9e3;
+    line-height: 3.55rem;
+    margin: 0;
+    text-align: center; }
+    header > .promo a {
+      text-decoration: underline; }
+  header nav ul li {
+    display: inline-block;
+    vertical-align: middle; }
+  header nav ul:first-child {
+    padding: 0 20px;
+    border-bottom: 2px solid #ebe9e3;
+    line-height: 3.655rem; }
+    header nav ul:first-child li {
+      margin: 0 10px;
+      vertical-align: top; }
+      header nav ul:first-child li .money {
+        color: #43c497; }
+      header nav ul:first-child li a {
+        text-decoration: underline; }
+      header nav ul:first-child li:last-child {
+        float: right; }
+    header nav ul:first-child:after {
+      content: '';
+      display: block;
+      clear: both; }
+  header nav ul:last-child {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Dosis, Arial, sans-serif;
+    font-size: 1.255rem;
+    color: #34404c;
+    font-weight: 500; }
+    header nav ul:last-child li {
+      margin: 0 16px; }
+
+#hero {
+  background: #ffffff; }
+  #hero #mainPromo {
+    color: #34404c;
+    position: relative;
+    text-align: center; }
+    #hero #mainPromo > img {
+      width: 100%; }
+    #hero #mainPromo .cta {
+      top: 20px;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      top: 20px; }
+      #hero #mainPromo .cta > h1 {
+        margin: 0;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #222222;
+        font-style: italic; }
+      #hero #mainPromo .cta > h2 {
+        font-size: .955rem;
+        margin: 7px 0 0; }
+        #hero #mainPromo .cta > h2 > span {
+          text-decoration: underline; }
+      #hero #mainPromo .cta > p {
+        font-size: .855rem;
+        margin: 0;
+        font-weight: 400; }
+    #hero #mainPromo .buttons {
+      bottom: 20px;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      left: 10px;
+      right: 10px; }
+      #hero #mainPromo .buttons::after {
+        clear: both;
+        content: "";
+        display: block; }
+      #hero #mainPromo .buttons button {
+        margin-top: 10px;
+        background: #3a75af;
+        color: #34404c;
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(50% - 15px);
+        float: left;
+        margin-left: 10px; }
+    @media only screen and (min-width: 481px) {
+      #hero #mainPromo .cta > h1 {
+        font-size: 26px; }
+      #hero #mainPromo .cta > h2 {
+        font-size: 18px;
+        margin: 13px 0 3px; }
+      #hero #mainPromo .cta > p {
+        font-size: 1rem; }
+      #hero #mainPromo .buttons button {
+        padding: 1.4rem 1.5rem;
+        width: calc(50% - 30px);
+        float: left;
+        margin-left: 20px; }
+        #hero #mainPromo .buttons button:hover {
+          opacity: 1;
+          background-color: #4b82b9; } }
+
+#recipes {
+  padding: 40px; }
+  #recipes > article {
+    background: #ffffff;
+    margin: 0 0 40px; }
+    #recipes > article::after {
+      clear: both;
+      content: "";
+      display: block; }
+    #recipes > article > section > img {
+      width: 100%; }
+    #recipes > article > section .contents {
+      padding: 20px; }
+      #recipes > article > section .contents h2 {
+        color: #34404c;
+        font-weight: 300;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 1.355rem; }
+        @media only screen and (min-width: 481px) {
+          #recipes > article > section .contents h2 {
+            margin-top: 40px; } }
+      #recipes > article > section .contents p:after {
+        content: '';
+        display: inline-block;
+        margin: 0 5px;
+        width: 28px;
+        height: 14px;
+        background: url(assets/images/arrow_icon.png) no-repeat 0 0; }
+      #recipes > article > section .contents button {
+        color: #d5ad4b;
+        text-align: left;
+        padding: 1rem 0;
+        background: transparent url(assets/images/underline.png) no-repeat 0 100%; }
+    @media only screen and (min-width: 481px) {
+      #recipes > article > section {
+        width: calc(50%);
+        float: left;
+        margin-left: 0; } }
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  color: #959187;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.03); }
+
+* {
+  box-sizing: border-box; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #34404c; }
+  a:hover {
+    text-decoration: underline; }
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #43c497;
+  color: #ffffff;
+  margin: 0 .25em 0 0;
+  padding: 1.08rem 1.5rem;
+  line-height: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  user-select: none; }
+  button:hover {
+    opacity: .9; }
+
+section h1 {
+  text-align: center;
+  color: #34404c;
+  font-weight: 300;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 2.155rem;
+  margin: 0 0 40px; }
+
+section .content {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 60px; }
+  section .content p {
+    line-height: 1.855rem; }
+  section .content button.cta {
+    margin: 20px auto; }
+
+#container {
+  margin: auto;
+  max-width: 640px;
+  background-color: #ebe9e3; }

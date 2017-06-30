@@ -1,0 +1,85 @@
+
+@mixin clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@mixin clearList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: $green;
+  color: $white;
+  margin: 0 .25em 0 0;
+  padding: $regularButton;
+  line-height: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  user-select: none;
+  &:hover {
+    opacity: .9;
+  }
+}
+
+@mixin underlineButton {
+  color: $gold;
+  text-align: left;
+  padding: 1rem 0;
+  background: transparent url(../assets/images/underline.png) no-repeat 0 100%;
+}
+
+@mixin position($direction) {
+  #{$direction}: $gutter;
+  position: absolute;
+  left: $gutter;
+  right: $gutter;
+}
+
+@mixin arrowIcon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 28px;
+  height: 14px;
+  background: url(../assets/images/arrow_icon.png) no-repeat 0 0;
+}
+
+@mixin heading {
+  padding: $gutter*2 0;
+  text-align: center;
+  font-family: $headingFont;
+  font-size: 1.255rem;
+  color: $darkblue;
+  font-weight: 500;
+}
+
+@mixin articleHeading {
+  color: $darkblue;
+  font-weight: $regular;
+  font-family: $sectionHeadingFont;
+  font-size: 1.355rem;
+  @include desktop {
+    margin-top: $gutter*2;
+  };
+}
+
+@mixin sectionHeading {
+  text-align: center;
+  color: $darkblue;
+  font-weight: $regular;
+  font-family: $sectionHeadingFont;
+  font-size: 2.155rem;
+  margin: 0 0 $gutter*2;
+}

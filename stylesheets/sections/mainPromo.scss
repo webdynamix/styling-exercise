@@ -1,0 +1,87 @@
+
+$buttons-grid: (
+  columns: 2,
+  gutter: $gutter*.5,
+);
+
+$buttons-grid-desktop: (
+  columns: 2,
+  gutter: $gutter,
+);
+
+#hero {
+  background: $white;
+  #mainPromo {
+    color: $darkblue;
+    position: relative;
+    text-align: center;
+    > img {
+      width: 100%;
+    }
+    .cta {
+      @include position(top);
+      top: $gutter;
+      > h1 {
+        margin: 0;
+        font-family: $sectionHeadingFont;
+        font-size: $fontsize;
+        font-weight: $regular;
+        color: $black;
+        font-style: italic;
+      }
+      > h2 {
+        font-size: .955rem;
+        margin: 7px 0 0;
+        > span {
+          text-decoration: underline;
+        }
+      }
+      > p {
+        font-size: .855rem;
+        margin: 0;
+        font-weight: $medium;
+      }
+    }
+
+    .buttons {
+      @include position(bottom);
+      left: $gutter*.5;
+      right: $gutter*.5;
+      @include grid-container;
+      button {
+        margin-top: $gutter*.5;
+        background: $blue;
+        color: $darkblue;
+        padding-left: 0;
+        padding-right: 0;
+        @include grid-column(1, $buttons-grid);
+      }
+    }
+
+    @include desktop {
+      .cta {
+        > h1 {
+          font-size: $bigFont;
+        }
+        > h2 {
+          font-size: $fontsize;
+          margin: 13px 0 3px;
+        }
+        > p {
+          font-size: 1rem;
+        }
+      }
+      .buttons {
+        button {
+          padding: $mediumButton;
+          @include grid-column(1, $buttons-grid-desktop);
+          &:hover {
+            opacity: 1;
+            background-color: $hoverBlue;
+          }
+        }
+      }
+    };
+  }
+
+}

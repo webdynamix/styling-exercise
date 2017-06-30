@@ -1,0 +1,50 @@
+header {
+  font-size: 1rem;
+  background: $white;
+  > .promo {
+    color: $darkblue;
+    font-weight: $medium;
+    background: $contentBackground;
+    line-height: 3.55rem;
+    margin: 0;
+    text-align: center;
+    a {
+      text-decoration: underline;
+    }
+  }
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:first-child {
+        padding: 0 $gutter;
+        border-bottom: 2px solid $contentBackground;
+        line-height: 3.655rem;
+        li {
+          margin: 0 $gutter*.5;
+          vertical-align: top;
+          .money {
+            color: $green;
+          }
+          a {
+            text-decoration: underline;
+          }
+          &:last-child {
+            float: right;
+          }
+        }
+        &:after {
+          @include clearfix;
+        }
+      }
+      &:last-child {
+        @include heading;
+        li {
+          margin: 0 $gutter*.8;
+        }
+      }
+    }
+  }
+}

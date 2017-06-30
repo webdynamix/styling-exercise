@@ -1,0 +1,38 @@
+
+$article-grid: (
+  columns: 2,
+  gutter: 0,
+);
+
+#recipes {
+  padding: $gutter*2;
+  > article {
+    background: $white;
+    margin: 0 0 $gutter*2;
+    @include grid-container;
+    > section {
+      > img {
+        width: 100%;
+      }
+      .contents {
+        padding: $gutter;
+        h2 {
+          @include articleHeading;
+        }
+        p {
+          &:after {
+            content: '';
+            @include arrowIcon;
+          }
+        }
+        button {
+          @include underlineButton;
+        }
+      }
+      @include desktop {
+        @include grid-column(1, $article-grid);
+      }
+    }
+  }
+
+}

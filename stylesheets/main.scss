@@ -1,0 +1,62 @@
+@import "bourbon";
+@import "neat";
+@import "fonts";
+@import "constants";
+@import "mixins";
+@import "header";
+@import "sections/mainPromo";
+@import "sections/recipes";
+
+body {
+  font-family: $mainFont;
+  color: #959187;
+  font-size: $fontsize;
+  font-weight: $regular;
+  margin: 0;
+  background-color: $siteBackground;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  @include clearList;
+}
+
+a {
+  text-decoration: none;
+  font-weight: $medium;
+  color: $darkblue;
+  &:hover {
+    // color: $blue;
+    text-decoration: underline;
+  }
+}
+
+button {
+  @include button;
+}
+
+section {
+  h1 {
+    @include sectionHeading;
+  }
+  .content {
+    text-align: center;
+    background: $white;
+    padding: $gutter*2 $gutter*3;
+    p {
+      line-height: 1.855rem;
+    }
+    button.cta {
+      margin: $gutter auto;
+    }
+  }
+}
+
+#container {
+  margin: auto;
+  max-width: $maxScreenWidth;
+  background-color: $contentBackground;
+}

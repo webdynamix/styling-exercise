@@ -1,0 +1,29 @@
+{
+  "name": "styling-example",
+  "version": "1.0.0",
+  "description": "Styling exercise",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:webdynamix/styling-exercise.git"
+  },
+  "author": "Valentin vale@webdynamix.com",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/webdynamix/styling-exercise#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "node-sass": "^4.5.3",
+    "resolve-url-loader": "^2.0.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {}
+}
